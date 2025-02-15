@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test thread-count="5" name="Default XmlTest name aaa4d901-4d38-4eef-b469-6835759be2fa(failed)">
+    <classes>
+      <class name="org.testing.testscripts.TC4">
+        <methods>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="testcase4"/>
+        </methods>
+      </class> <!-- org.testing.testscripts.TC4 -->
+    </classes>
+  </test> <!-- Default XmlTest name aaa4d901-4d38-4eef-b469-6835759be2fa(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
