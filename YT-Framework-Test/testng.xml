@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <!-- Log4j configuration -->
+</log4j:configuration>
+
+<suite name="Suite1" parellel="tests" verbose="1">
+
+<listener>
+<listener class-name="org.testing.utilities.MyAnnotationTransformer"/>
+</listener>
+  <test thread-count="5" name="ChromeTest">
+    <classes>
+      <class name="org.testing.testscripts.TC1"/>
+      <class name="org.testing.testscripts.TC2"/>
+      <class name="org.testing.testscripts.TC3"/>
+      <class name="org.testing.testscripts.TC4"/>
+      <class name="org.testing.testscripts.TC5"/>
+      <class name="org.testing.testscripts.TC7"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
