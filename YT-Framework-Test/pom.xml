@@ -18,13 +18,15 @@
     </properties>
 
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.10.1</version>
-    <scope>test</scope>
-</dependency>
+
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version>
+        <scope>test</scope>
+    </dependency>
+
+
 
 <dependency>
     <groupId>org.apache-extras.beanshell</groupId>
@@ -171,17 +173,13 @@
 
 
 <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.1.2</version>
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>YT-Framework-Test\testng.xml</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
-    </plugins>
+<plugins>
+    <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.1.2</version>
+</plugin>
+</plugins>
+
 </build>
 </project>
